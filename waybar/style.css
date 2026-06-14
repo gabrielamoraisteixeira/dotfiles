@@ -1,0 +1,121 @@
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: FiraCode Nerd Font;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent; 
+  margin: 5px;
+}
+
+
+#battery,
+#clock,
+#cpu,
+#custom-keyboard-layout,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#temperature,
+#tray,
+#language,
+#bluetooth,
+#mic {
+  padding: 3px 6px;
+  margin: 4px 6px;
+  border-radius: 12px;
+}
+
+#custom-power,
+#sound {
+    padding: 1px 10px;
+    background-color: transparent;
+}
+
+#clock { 
+  color: #434c5e;
+  background-color: #88c0d0;
+}
+
+#pulseaudio { 
+  background-color: #b48ead; 
+}
+#network { 
+  background-color: #81a1c1; 
+}
+
+#bluetooth { 
+  background-color: #8fbcbb; 
+}
+
+#memory { 
+  background-color: #5e81ac; 
+}
+
+#battery { 
+  color: #282828;
+  background-color: #a3be8c;
+}
+
+#battery.critical:not(.charging) {
+    border-color: #cc241d;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        border-color: #99bce2;
+    }
+}
+
+#workspaces {
+  background-color: #4c566a; 
+  border-radius: 12px;
+  padding: 3px 6px;
+  margin: 4px 6px;
+}
+
+#workspaces button {
+  padding: 2px 8px;
+  margin: 0 2px;
+  border-radius: 12px;
+  background: transparent;
+  color: #d8dee9;
+}
+
+#workspaces button:hover {
+    background: #88c0d0;
+}
+
+#workspaces button.active {
+  background-color: #88c0d0;
+  color: #4c566a;
+}
+
+#workspaces button.urgent {
+    background-color: #cc241d;
+}
+
+#custom-power {
+    padding: 0 12px;
+    margin: 4px 6px;
+    border-radius: 10px;
+
+    background: #4c566a;
+    color: #8fbcbb;
+    font-size: 10px;
+}
+
+#custom-power:hover {
+    background: #8fbcbb;
+    color: #e5e9f0;
+}
