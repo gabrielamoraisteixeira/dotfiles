@@ -1,0 +1,9 @@
+theme = Nord
+
+font-family = FiraCode Nerd Font Mono
+font-size = 10
+
+background-opacity = 0.80
+window-padding-x = 10
+window-padding-y = 10
+
